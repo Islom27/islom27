@@ -9,7 +9,7 @@
 .header {
     width: 100%;    
     height: 100vh;
-    background: url('../img/intro-bg.jpg');
+    background: url('../img/intro-bg.jpg') center no-repeat;
     background-size: cover;
 }
 .header_menu{
@@ -44,6 +44,52 @@
 .vehicle_selection > a {
     text-decoration: none;
     color: black;
+}
+
+@media (max-width: 980px) {
+    .header_nav{
+        max-height: 0;
+        display: flex;
+        align-items: baseline;
+        flex-direction: column;
+    }
+}
+
+.lease {
+    width: 100%;
+    height: 100vh;
+    background: url('../img/lease.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.leasing_online {
+    padding-top: 100px;
+    padding-left: 50px;
+    font-size: 35px;
+}
+
+.lease_button {
+    height: 40px;
+    width: 130px;
+    margin-top: 455px;
+    margin-left: 1240px;
+    outline: 5px solid white;
+    padding: 3px 3px 20px 20px;
+    font-size: 40px;
+    font-weight: 600;
+    background: rgb(146, 139, 139);
+}
+
+.lease_button > a {
+    text-decoration: none;
+    color: white;   
+}
+
+.about {
+    background-color:rgb(194, 202, 202);
+    align-items: center;
+    width: 100%;
+    height: 100vh;
 }
 
 
