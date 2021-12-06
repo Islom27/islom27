@@ -35,24 +35,24 @@
             <p>Vehicles</p>
         </div>
         <div class="vehicle_selection">
-            <a href="#">Kia Soul</a>
-            <a href="#">Kia Seltos</a>
-            <a href="#">Kia K5</a>
-            <a href="#">Kia Sportage</a>
-            <a href="#">Kia Sorento</a>
-            <a href="#">Kia Carnival</a>
-            <a href="#">Kia Mohave</a>
-            <a href="#">Kia Stinger</a>            
+            <button class="btn active" onclick="filterSelection('soul')">Kia Soul</button>
+            <button class="btn" onclick="filterSelection('seltos')">Kia Seltos</button>
+            <button class="btn" onclick="filterSelection('k5')">Kia K5</button>
+            <button class="btn" onclick="filterSelection('sportage')">Kia Sportage</button>
+            <button class="btn" onclick="filterSelection('sorento')">Kia Sorento</button>
+            <button class="btn" onclick="filterSelection('carnival')">Kia Carnival</button>
+            <button class="btn" onclick="filterSelection('mohave')">Kia Mohave</button>
+            <button class="btn" onclick="filterSelection('stinger')">Kia Stinger</button>            
         </div>
         <div class="vehicles_photos">
-            <img src="img/Kia Soul.png" alt="Kia Soul">
-            <img src="img/Kia Seltos.png" alt="Kia Setos">
-            <img src="img/Kia K5.png" alt="Kia K5">
-            <img src="img/Kia Sportage.png" alt="Kia Sportage">
-            <img src="img/Kia Sorento.png" alt="Kia Sorento">
-            <img src="img/Kia Carnival.png" alt="Kia Carnival">
-            <img src="img/Kia Mohave.png" alt="Kia Mohave">
-            <img src="img/Kia Stinger.png" alt="Kia Stinger">
+            <div class="filterDiv soul"><img src="img/Kia Soul.png" alt="Kia Soul"></div>
+            <div class="filterDiv seltos"><img src="img/Kia Seltos.png" alt="Kia Seltos"></div>
+            <div class="filterDiv k5"><img src="img/Kia K5.png" alt="Kia K5"></div>
+            <div class="filterDiv sportage"><img src="img/Kia Sportage.png" alt="Kia Sportage"></div>
+            <div class="filterDiv sorento"><img src="img/Kia Sorento.png" alt="Kia Sorento"></div>
+            <div class="filterDiv carnival"><img src="img/Kia Carnival.png" alt="Kia Carnival"></div>
+            <div class="filterDiv mohave"><img src="img/Kia Mohave.png" alt="Kia Mohave"></div>
+            <div class="filterDiv stinger"><img src="img/Kia Stinger.png" alt="Kia Stinger"></div>
         </div>
     </section>
     <section class="lease">
@@ -64,9 +64,46 @@
         </div>
     </section>
     <section class="about">
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum alias, repellendus explicabo libero voluptates quis voluptatum, facilis soluta enim doloremque blanditiis. Ad expedita ullam quas aliquam doloremque optio saepe reprehenderit?</p>
+        <div class="slider">
+            <div class="slider_content">
+                <img src="img/Kia Seltos.png" id="last_clone" alt="">
+                <img src="img/Kia Carnival.png" alt="">
+                <img src="img/Kia Sportage.png" alt="">
+                <img src="img/Kia K5.png" alt="">
+                <img src="img/Kia Mohave.png" alt="">
+                <img src="img/Kia Seltos.png" alt="">
+                <img src="img/Kia Carnival.png" id="first_clone" alt="">
+            </div>
+        </div>
+        <button id="back_btn">Back</button>
+        <button id="next_btn">Next</button>
+    </section>
+    <section class="news">
+        <div class="news_cards">
+            <div class="card card1">
+                <h2>Morning</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quos recusandae eaque impedit exercitationem, vitae voluptas suscipit quidem aut facilis sit corrupti sed aliquam error eius saepe officiis harum alias.</p>
+            </div>
+            <div class="card card2">
+                <h2>Aftenoon</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quos recusandae eaque impedit exercitationem, vitae voluptas suscipit quidem aut facilis sit corrupti sed aliquam error eius saepe officiis harum alias.</p>
+            </div>
+            <div class="card card3">
+                <h2>Evening</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quos recusandae eaque impedit exercitationem, vitae voluptas suscipit quidem aut facilis sit corrupti sed aliquam error eius saepe officiis harum alias.</p>
+            </div>
+            <div class="card card4">
+                <h2>Night</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quos recusandae eaque impedit exercitationem, vitae voluptas suscipit quidem aut facilis sit corrupti sed aliquam error eius saepe officiis harum alias.</p>
+            </div>
         </div>
     </section>
+    <section class="faqs">
+        
+    </section>
+    <section class="contacts">
+
+    </section>
+    <script src="js/CW1.js"></script>
 </body>
 </html>
