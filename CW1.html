@@ -15,13 +15,34 @@
                 <a href="#"><img src="img/logo.png" alt="No photo no video"></a>
             </div>
             <nav class="header_nav">
-                <a href="#" class="header_nav_link">Home Page</a>
-                <a href="#" class="header_nav_link">Vehicles</a>
-                <a href="#" class="header_nav_link">Lease Online</a>
-                <a href="#" class="header_nav_link">About Us</a>
-                <a href="#" class="header_nav_link">News</a>
-                <a href="#" class="header_nav_link">FAQs</a>
-                <a href="#" class="header_nav_link">Contact Us</a>    
+                <ul class="navbar">
+                    <li class="nav_item"> 
+                        <a href="#" class="header_nav_link">Home Page</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="header_nav_link">Vehicles</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="header_nav_link">Lease Online</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="header_nav_link">About Us</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="header_nav_link">News</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="header_nav_link">FAQs</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="header_nav_link">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
             </nav>
         </div>
         <div class="header_content">
@@ -35,14 +56,14 @@
             <p>Vehicles</p>
         </div>
         <div class="vehicle_selection">
-            <button class="btn active" onclick="filterSelection('soul')">Kia Soul</button>
-            <button class="btn" onclick="filterSelection('seltos')">Kia Seltos</button>
-            <button class="btn" onclick="filterSelection('k5')">Kia K5</button>
-            <button class="btn" onclick="filterSelection('sportage')">Kia Sportage</button>
-            <button class="btn" onclick="filterSelection('sorento')">Kia Sorento</button>
-            <button class="btn" onclick="filterSelection('carnival')">Kia Carnival</button>
-            <button class="btn" onclick="filterSelection('mohave')">Kia Mohave</button>
-            <button class="btn" onclick="filterSelection('stinger')">Kia Stinger</button>            
+            <button class="btn active" onclick="filterSelection('soul')">Kia Soul<br>$30/day</button>
+            <button class="btn" onclick="filterSelection('seltos')">Kia Seltos<br>$40/day</button>
+            <button class="btn" onclick="filterSelection('k5')">Kia K5<br>$40/day</button>
+            <button class="btn" onclick="filterSelection('sportage')">Kia Sportage<br>$45/day</button>
+            <button class="btn" onclick="filterSelection('sorento')">Kia Sorento<br>$50/day</button>
+            <button class="btn" onclick="filterSelection('carnival')">Kia Carnival<br>$55/day</button>
+            <button class="btn" onclick="filterSelection('mohave')">Kia Mohave<br>$70/day</button>
+            <button class="btn" onclick="filterSelection('stinger')">Kia Stinger<br>$60/day</button>            
         </div>
         <div class="vehicles_photos">
             <div class="filterDiv soul"><img src="img/Kia Soul.png" alt="Kia Soul"></div>
@@ -55,34 +76,47 @@
             <div class="filterDiv stinger"><img src="img/Kia Stinger.png" alt="Kia Stinger"></div>
         </div>
     </section>
-    <section class="lease">
-        <div class="leasing_online">
-            <h2>Lease online easily</h2>
+    <section class="info">
+        <div class="info_head">
+            <h2>If you want to get more information about our cars</h2>
         </div>
-        <div class="lease_button">
-            <a href="#">Lease</a>
+        <div class="info_btn">
+            <a href="https://www.kia.ru/models/">Click</a>
         </div>
     </section>
     <section class="about">
-        <div class="slider">
-            <div class="slider_content">
-                <img src="img/Kia Seltos.png" id="last_clone" alt="">
-                <img src="img/Kia Carnival.png" alt="">
-                <img src="img/Kia Sportage.png" alt="">
-                <img src="img/Kia K5.png" alt="">
-                <img src="img/Kia Mohave.png" alt="">
-                <img src="img/Kia Seltos.png" alt="">
-                <img src="img/Kia Carnival.png" id="first_clone" alt="">
+        <div class="container">
+            <div class="slider">
+              <div class="slider_texts">
+                <div class="slider_text active">
+                   <p>For the first time since 1989, J.D. Power is a brand that does not belong to the premium segment, and it becomes Kia!<p>
+                </div>
+                <div class="slider_text">
+                  <p>In January, Kia President Han Woo Park announced the brand's new medium-term strategy, Plan S. According to it, Kia's product portfolio will include 11 electric models by 2025.</p>
+                </div>
+                <div class="slider_text">
+                  <p>Sometimes it is enough to take only a step to find the answer to this question. And sometimes you have to go the whole way. But the result is worth it. After all, only being in motion, you begin to understand that the main thing is not the goal, but the inspiration that you find in the process.</p>
+                </div>
+                <div class="slider_text">
+                  <p>Movement is associated with the concept of constant changes - changes in the environment, space, and, as a result, changes in ourselves. When you are on the move, you have time to think. Movement stimulates thinking, creativity, new ideas and progress.</p>
+                </div>
+              </div>
+              <div id="btn_back" class="slider_btn"></div>
+              <div id="btn_next" class="slider_btn"></div>
+              <div class="slider_points">
+                <div class="slider_point active"></div>
+                <div class="slider_point"></div>
+                <div class="slider_point"></div>
+                <div class="slider_point"></div>
+              </div>
             </div>
-        </div>
-        <button id="back_btn">Back</button>
-        <button id="next_btn">Next</button>
+          </div>
     </section>
     <section class="news">
         <div class="news_cards">
             <div class="card card1">
                 <h2>Morning</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quos recusandae eaque impedit exercitationem, vitae voluptas suscipit quidem aut facilis sit corrupti sed aliquam error eius saepe officiis harum alias.</p>
+                <p>Take on new roads with the innovative style and power of the all-electric EV6. With a spacious interior and up to 300 miles of targeted range on a single charge, EV6 is built to inspire.</p>
             </div>
             <div class="card card2">
                 <h2>Aftenoon</h2>
@@ -99,11 +133,119 @@
         </div>
     </section>
     <section class="faqs">
-        
+        <h1>FAQs</h1>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">
+                    Will the Kia vehicle I have ordered come with the new Kia badge?
+                </div>
+                <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                    While our new Kia logo has officially launched, the changeover of badges across our product range will be a gradual process and commence with model year 2022 vehicles.
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-item-header">
+                    When will the new Kia logo badge arrive?
+                </div>
+                <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                    The new Kia logo badge will begin to arrive with Model Year 2022 vehicle orders. All Model Year 2022 Kia vehicles ordered after this point will come fitted with the new Kia logo as the badge.
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-item-header">
+                    Can I get my Kia Dealer to update the logo on my current Kia Vehicle?
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                        Changing your previous Kia badge on your current vehicle is not possible due to the physical design and shape of the new Kia logo.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-item-header">
+                    Why do some vehicles already have the Kia logo overseas?
+                </div>
+                <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                    The new Kia logo application is different amongst global regions due to the production month of 2022 Model Year vehicles varying globally.
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-item-header">
+                    What is the new Kia ethos?
+                </div>
+                <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                    The new Kia brand ethos is ‘Movement that inspires'.
+                    We believe movement inspires ideas. That is why we create the space for inspiration with our bold new designs and original inventive products, 
+                    creating user ownership and experiences that are simple, intuitive and integrated.
+                </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="contacts">
+        <div class="contacts_container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, you can contact us</p>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>Send your request</h3>
+                    <form>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Name</label>
+                                <input type="text" placeholder="John Amendo">
+                            </div>
+                            <div class="input-group">
+                                <label>Phone</label>
+                                <input type="text" placeholder="+998 27 2002 12 23">
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="johnamendo@gmail.com">
+                            </div>
+                            <div class="input-group">
+                                <label>Subject</label>
+                                <input type="text" placeholder="Product Demo">
+                            </div>
+                        </div>
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" class="submit">Send</button>
+                    </form>
 
+                </div>
+                <div class="contact-right">
+                    <h3>Reach Us</h3>
+                    <table>
+                        <tr>
+                            <td>Email</td>
+                            <td>contactus@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>+998(89) 951 45 87</td>
+                        </tr>
+                        <tr>
+                            <td>Adress</td>
+                            <td>White street, Tashkent, Uzbekistan</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>  
     </section>
-    <script src="js/CW1.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/slider.js   "></script>
 </body>
 </html>
