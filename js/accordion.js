@@ -1,23 +1,21 @@
-const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+const accordionQuestion = document.querySelectorAll(".accordion_question");
 
-accordionItemHeaders.forEach(accordionItemHeader => {
-  accordionItemHeader.addEventListener("click", event => {
+accordionQuestion.forEach(accordionQuestion => {
+  accordionQuestion.addEventListener("click", event => {
     
-    // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
-    
-    const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
-    if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
-      currentlyActiveAccordionItemHeader.classList.toggle("active");
-      currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+    const currentlyActiveAccordionQuestion = document.querySelector(".accordion_question.active");
+    if(currentlyActiveAccordionQuestion && currentlyActiveAccordionQuestion!==accordionQuestion) {
+      currentlyActiveAccordionQuestion.classList.toggle("active");
+      currentlyActiveAccordionQuestion.nextElementSibling.style.maxHeight = 0;
     }
 
-    accordionItemHeader.classList.toggle("active");
-    const accordionItemBody = accordionItemHeader.nextElementSibling;
-    if(accordionItemHeader.classList.contains("active")) {
-      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+    accordionQuestion.classList.toggle("active");
+    const accordionAnswerHolder = accordionQuestion.nextElementSibling;
+    if(accordionQuestion.classList.contains("active")) {
+      accordionAnswerHolder.style.maxHeight = accordionAnswerHolder.scrollHeight + "px";
     }
     else {
-      accordionItemBody.style.maxHeight = 0;
+      accordionAnswerHolder.style.maxHeight = 0;
     }
     
   });
