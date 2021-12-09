@@ -1,259 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Car</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/CW1.css">
-</head>
-<body>
-    <header class="header">
-        <div class="header_menu">
+   <head>
+      <meta charset="UTF-8">
+      <title>Carsharing in Uzbekistan</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/CW1.css">
+   </head>
+   <body>
+      <header id="home" class="header">
+         <div class="header_menu">
             <div class="header_logo">
-                <a href="#"><img src="img/logo.png" alt="No photo no video"></a>
+               <a href="#"><img src="img/logo.png" alt="No photo no video"></a>
             </div>
             <nav class="header_nav">
-                <ul class="navbar">
-                    <li class="nav_item"> 
-                        <a href="#" class="header_nav_link">Home Page</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#" class="header_nav_link">Vehicles</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#" class="header_nav_link">About Cars</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#" class="header_nav_link">About Us</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#" class="header_nav_link">News</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#" class="header_nav_link">FAQs</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#" class="header_nav_link">Contact Us</a>
-                    </li>
-                </ul>
-                <div class="hamburger">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                </div>
+               <ul class="navbar">
+                  <li class="nav_item"> 
+                     <a href="#home" class="header_nav_link">Home Page</a>
+                  </li>
+                  <li class="nav_item">
+                     <a href="#vehicles" class="header_nav_link">Vehicles</a>
+                  </li>
+                  <li class="nav_item">
+                     <a href="#cars" class="header_nav_link">About Cars</a>
+                  </li>
+                  <li class="nav_item">
+                     <a href="#about" class="header_nav_link">About Us</a>
+                  </li>
+                  <li class="nav_item">
+                     <a href="#news" class="header_nav_link">News</a>
+                  </li>
+                  <li class="nav_item">
+                     <a href="#faqs" class="header_nav_link">FAQs</a>
+                  </li>
+                  <li class="nav_item">
+                     <a href="#contacts" class="header_nav_link">Contact Us</a>
+                  </li>
+               </ul>
+               <div class="hamburger">
+                  <span class="line"></span>
+                  <span class="line"></span>
+                  <span class="line"></span>
+               </div>
             </nav>
-        </div>
-        <div class="header_content">
+         </div>
+         <div class="header_content">
             <h1>Carsharing for your achievements</h1>
             <h3>Make yourself feel comfort</h3>
-        </div>
-    </header>
-    <section class="vehicles">
-        <div class="vehicles_heading">
-            <h2></h2>
+         </div>
+      </header>
+      <section id="vehicles" class="vehicles">
+         <div class="vehicles_heading">
             <p>Vehicles</p>
-        </div>
-        <div class="vehicle_selection">
-            <button class="btn active" onclick="filterSelection('soul')">Kia Soul<br>$30/day</button>
-            <button class="btn" onclick="filterSelection('seltos')">Kia Seltos<br>$40/day</button>
-            <button class="btn" onclick="filterSelection('k5')">Kia K5<br>$40/day</button>
-            <button class="btn" onclick="filterSelection('sportage')">Kia Sportage<br>$45/day</button>
-            <button class="btn" onclick="filterSelection('sorento')">Kia Sorento<br>$50/day</button>
-            <button class="btn" onclick="filterSelection('carnival')">Kia Carnival<br>$55/day</button>
-            <button class="btn" onclick="filterSelection('mohave')">Kia Mohave<br>$70/day</button>
-            <button class="btn" onclick="filterSelection('stinger')">Kia Stinger<br>$60/day</button>            
-        </div>
-        <div class="vehicles_photos">
-            <div class="filterDiv soul"><img src="img/Kia Soul.png" alt="Kia Soul"></div>
-            <div class="filterDiv seltos"><img src="img/Kia Seltos.png" alt="Kia Seltos"></div>
-            <div class="filterDiv k5"><img src="img/Kia K5.png" alt="Kia K5"></div>
-            <div class="filterDiv sportage"><img src="img/Kia Sportage.png" alt="Kia Sportage"></div>
-            <div class="filterDiv sorento"><img src="img/Kia Sorento.png" alt="Kia Sorento"></div>
-            <div class="filterDiv carnival"><img src="img/Kia Carnival.png" alt="Kia Carnival"></div>
-            <div class="filterDiv mohave"><img src="img/Kia Mohave.png" alt="Kia Mohave"></div>
-            <div class="filterDiv stinger"><img src="img/Kia Stinger.png" alt="Kia Stinger"></div>
-        </div>
-    </section>
-    <section class="info">
-        <div class="info_head">
+         </div>
+         <div>
+            <div class="vehicle_selection">
+               <div>
+                  <button class="btn active" onclick="filterSelection('soul')">Kia Soul<br>$30/day</button>
+                  <button class="btn" onclick="filterSelection('seltos')">Kia Seltos<br>$40/day</button>
+                  <button class="btn" onclick="filterSelection('k5')">Kia K5<br>$40/day</button>
+                  <button class="btn" onclick="filterSelection('sportage')">Kia Sportage<br>$45/day</button>
+               </div>
+               <div>
+                  <button class="btn" onclick="filterSelection('sorento')">Kia Sorento<br>$50/day</button>
+                  <button class="btn" onclick="filterSelection('carnival')">Kia Carnival<br>$55/day</button>
+                  <button class="btn" onclick="filterSelection('mohave')">Kia Mohave<br>$70/day</button>
+                  <button class="btn" onclick="filterSelection('stinger')">Kia Stinger<br>$60/day</button>            
+               </div>
+            </div>
+            <div class="vehicles_photos">
+               <div class="filterDiv soul"><img src="img/Kia Soul.png" alt="Kia Soul"></div>
+               <div class="filterDiv seltos"><img src="img/Kia Seltos.png" alt="Kia Seltos"></div>
+               <div class="filterDiv k5"><img src="img/Kia K5.png" alt="Kia K5"></div>
+               <div class="filterDiv sportage"><img src="img/Kia Sportage.png" alt="Kia Sportage"></div>
+               <div class="filterDiv sorento"><img src="img/Kia Sorento.png" alt="Kia Sorento"></div>
+               <div class="filterDiv carnival"><img src="img/Kia Carnival.png" alt="Kia Carnival"></div>
+               <div class="filterDiv mohave"><img src="img/Kia Mohave.png" alt="Kia Mohave"></div>
+               <div class="filterDiv stinger"><img src="img/Kia Stinger.png" alt="Kia Stinger"></div>
+            </div>
+         </div>
+      </section>
+      <section id="cars" class="info">
+         <div class="info_head">
             <h2>If you want to get more information about our cars</h2>
-        </div>
-        <div class="info_btn">
-            <a href="https://www.kia.ru/models/">Click</a>
-        </div>
-    </section>
-    <section class="about">
-        <div class="container">
+         </div>
+         <div class="info_click">
+            <a class="info_btn" href="https://www.kia.ru/models/">MORE</a>
+         </div>
+      </section>
+      <section id="about" class="about">
+         <div class="container">
             <div class="slider">
-              <div class="slider_texts">
-                <div class="slider_text active">
-                   <p>For the first time since 1989, J.D. Power is a brand that does not belong to the premium segment, and it becomes Kia!<p>
-                </div>
-                <div class="slider_text">
-                  <p>In January, Kia President Han Woo Park announced the brand's new medium-term strategy, Plan S. According to it, Kia's product portfolio will include 11 electric models by 2025.</p>
-                </div>
-                <div class="slider_text">
-                  <p>Sometimes it is enough to take only a step to find the answer to this question. And sometimes you have to go the whole way. But the result is worth it. After all, only being in motion, you begin to understand that the main thing is not the goal, but the inspiration that you find in the process.</p>
-                </div>
-                <div class="slider_text">
-                  <p>Movement is associated with the concept of constant changes - changes in the environment, space, and, as a result, changes in ourselves. When you are on the move, you have time to think. Movement stimulates thinking, creativity, new ideas and progress.</p>
-                </div>
-              </div>
-              <div id="btn_back" class="slider_btn"></div>
-              <div id="btn_next" class="slider_btn"></div>
-              <div class="slider_points">
-                <div class="slider_point active"></div>
-                <div class="slider_point"></div>
-                <div class="slider_point"></div>
-                <div class="slider_point"></div>
-              </div>
+               <div class="slider_texts">
+                  <div class="slider_text active">
+                     <p>For the first time since 1989, J.D. Power is a brand that does not belong to the premium segment, and it becomes Kia!
+                     <p>
+                  </div>
+                  <div class="slider_text">
+                     <p>In January, Kia President Han Woo Park announced the brand's new medium-term strategy, Plan S. According to it, Kia's product portfolio will include 11 electric models by 2025.</p>
+                  </div>
+                  <div class="slider_text">
+                     <p>Sometimes it is enough to take only a step to find the answer to this question. And sometimes you have to go the whole way. But the result is worth it. After all, only being in motion, you begin to understand that the main thing is not the goal, but the inspiration that you find in the process.</p>
+                  </div>
+                  <div class="slider_text">
+                     <p>Movement is associated with the concept of constant changes - changes in the environment, space, and, as a result, changes in ourselves. When you are on the move, you have time to think. Movement stimulates thinking, creativity, new ideas and progress.</p>
+                  </div>
+               </div>
+               <div id="btn_back" class="slider_btn"></div>
+               <div id="btn_next" class="slider_btn"></div>
+               <div class="slider_points">
+                  <div class="slider_point active"></div>
+                  <div class="slider_point"></div>
+                  <div class="slider_point"></div>
+                  <div class="slider_point"></div>
+               </div>
             </div>
-          </div>
-    </section>
-    <section class="news">
-        <div class="news_cards">
+         </div>
+      </section>
+      <section id="news" class="news">
+         <div class="news_cards">
             <a href="https://www.kia.com/us/en/kia-collective">
-            <div class="card card1">
-                <h2>Today</h2>
-                <p>The stories that inspire us, on the road to better days. Take on new roads with the innovative style and power of the all-electric EV6. With a spacious interior and up to 300 miles of targeted range on a single charge, EV6 is built to inspire.</p>
-            </div>
+               <div class="card card1">
+                  <h2>Today</h2>
+                  <p>The stories that inspire us, on the road to better days. Take on new roads with the innovative style and power of the all-electric EV6. With a spacious interior and up to 300 miles of targeted range on a single charge, EV6 is built to inspire.</p>
+               </div>
             </a>
             <a href="https://www.kia.com/us/en/kia-collective/vision/from-sketch-to-showroom">
-            <div class="card card2">
-                <h2>18.11.2021</h2>
-                <p>The process of designing a new car can take years of discovery, effort and iteration. But for the Kia Seltos, it took a team of designers to question what’s possible. The Seltos was developed to fit a need between the Soul and Sportage.</p>
-            </div>
+               <div class="card card2">
+                  <h2>18.11.2021</h2>
+                  <p>The process of designing a new car can take years of discovery, effort and iteration. But for the Kia Seltos, it took a team of designers to question what’s possible. The Seltos was developed to fit a need between the Soul and Sportage.</p>
+               </div>
             </a>
             <a href="https://www.kia.com/us/en/kia-collective/vision/habaniro-concept">
-            <div class="card card3">
-                <h2>17.11.2021</h2>
-                <p>In 2018, Kia challenged their world-class engineers to build something that pushed the limits. The design team created an SUV with 5 seats, gull-wing doors, employing A.I. autonomous driving technology and code-named: “The Habaniro.”</p>
-            </div>
+               <div class="card card3">
+                  <h2>17.11.2021</h2>
+                  <p>In 2018, Kia challenged their world-class engineers to build something that pushed the limits. The design team created an SUV with 5 seats, gull-wing doors, employing A.I. autonomous driving technology and code-named: “The Habaniro.”</p>
+               </div>
             </a>
             <a href="https://www.kia.com/us/en/kia-collective/vision/movement-that-inspires">
-            <div class="card card4">
-                <h2>17.11.2021</h2>
-                <p>Movement is a powerful force. It sets the body and the mind free. For Kia’s first brand spot, “Writer,” we follow a screenwriter with writer’s block, who takes a drive through the city in her Kia EV6 to clear her mind and look for inspiration. </p>
-            </div>
+               <div class="card card4">
+                  <h2>17.11.2021</h2>
+                  <p>Movement is a powerful force. It sets the body and the mind free. For Kia’s first brand spot, “Writer,” we follow a screenwriter with writer’s block, who takes a drive through the city in her Kia EV6 to clear her mind and look for inspiration. </p>
+               </div>
             </a>
-        </div>
-    </section>
-    <section class="faqs">
-        <h1>FAQs</h1>
-        <div class="accordion">
+         </div>
+      </section>
+      <section id="faqs" class="faqs">
+         <h1>FAQs</h1>
+         <div class="accordion">
             <div class="accordion_item">
-                <div class="accordion_question">
-                    Will the Kia vehicle I have ordered come with the new Kia badge?
-                </div>
-                <div class="accordion_answer_holder">
-                <div class="accordion_answer">
-                    While our new Kia logo has officially launched, the changeover of badges across our product range will be a gradual process and commence with model year 2022 vehicles.
-                </div>
-                </div>
+               <div class="accordion_question">
+                  Will the Kia vehicle I have ordered come with the new Kia badge?
+               </div>
+               <div class="accordion_answer_holder">
+                  <div class="accordion_answer">
+                     While our new Kia logo has officially launched, the changeover of badges across our product range will be a gradual process and commence with model year 2022 vehicles.
+                  </div>
+               </div>
+            </div>
+            <div class="accordion_item">
+               <div class="accordion_question">
+                  When will the new Kia logo badge arrive?
+               </div>
+               <div class="accordion_answer_holder">
+                  <div class="accordion_answer">
+                     The new Kia logo badge will begin to arrive with Model Year 2022 vehicle orders. All Model Year 2022 Kia vehicles ordered after this point will come fitted with the new Kia logo as the badge.
+                  </div>
+               </div>
             </div>
             <div class="accordion_item">
                 <div class="accordion_question">
-                    When will the new Kia logo badge arrive?
+                    Are KIA Parts and Accessories covered by warranty?
                 </div>
                 <div class="accordion_answer_holder">
-                <div class="accordion_answer">
-                    The new Kia logo badge will begin to arrive with Model Year 2022 vehicle orders. All Model Year 2022 Kia vehicles ordered after this point will come fitted with the new Kia logo as the badge.
+                   <div class="accordion_answer">
+                    KIA Parts and Accessories installed at the time of a retail sale of a new motor vehicle are covered by the KIA New Vehicle Warranty applicable to your vehicle, depending on the vehicle’s use. 
+                   </div>
                 </div>
+             </div>
+             <div class="accordion_item">
+                <div class="accordion_question">
+                    Will my warranty be affected if I have the vehicle modified?
                 </div>
+                <div class="accordion_answer_holder">
+                   <div class="accordion_answer">
+                    The KIA New Vehicle Warranty will continue to apply to vehicles that may have been modified. However, KIA does not warrant the workmanship of, nor any part, component, assembly, equipment or accessory that has not been supplied by and approved by KIA for the specified purpose.
+                   </div>
+                </div>
+             </div>
+             <div class="accordion_item">
+                <div class="accordion_question">
+                    Is towing covered by the KIA New Vehicle Warranty?
+                </div>
+                <div class="accordion_answer_holder">
+                   <div class="accordion_answer">
+                      If a component covered by the KIA New Vehicle Warranty fails as a result of poor workmanship or materials, rendering the vehicle immobile or undriveable, the cost of towing to the nearest authorised KIA dealer is generally covered under warranty.
+                   </div>
+                </div>
+             </div>
+             <div class="accordion_item">
+                <div class="accordion_question">
+                    Can I convert my vehicle to use LPG?
+                </div>
+                <div class="accordion_answer_holder">
+                   <div class="accordion_answer">
+                    KIA does not manufacture LPG compatible engines for vehicles imported to Australia. Therefore, KIA advises that LPG should not be used in its range of petrol vehicles.
+                   </div>
+                </div>
+             </div>
+             <div class="accordion_item">
+                <div class="accordion_question">
+                    Where do I go to obtain KIA warranty and service?
+                </div>
+                <div class="accordion_answer_holder">
+                   <div class="accordion_answer">
+                    For a full listing of Authorised KIA Dealers, visit our KIA Dealers section on our website - www.kia.com.au - or call KIA Customer Service on 131 KIA (131 542).
+                   </div>
+                </div>
+             </div>
+             <div class="accordion_item">
+                <div class="accordion_question">
+                    What items are not covered by the KIA New Vehicle Warranty?
+                </div>
+                <div class="accordion_answer_holder">
+                   <div class="accordion_answer">
+                    Any damage caused when a non-genuine KIA part or accessory has been used. 
+                    Any defects caused by repairs or replacement by other than an Authorised KIA Dealer.
+                    Any damage considered to be part of normal maintenance, such as cleaning and polishing.
+                   </div>
+                </div>
+             </div>
+             <div class="accordion_item">
+                <div class="accordion_question">
+                    Are tyres covered by the KIA New Vehicle Warranty?
+                </div>
+                <div class="accordion_answer_holder">
+                   <div class="accordion_answer">
+                    The tyre manufacturer covers the original tyres fitted to the vehicle. Should you have any concerns regarding the tyres on your vehicle, contact your Authorised KIA Service Dealer for assistance.
+                   </div>
+                </div>
+             </div>
+            <div class="accordion_item">
+               <div class="accordion_question">
+                  Can I get my Kia Dealer to update the logo on my current Kia Vehicle?
+               </div>
+               <div class="accordion_answer_holder">
+                  <div class="accordion_answer">
+                     Changing your previous Kia badge on your current vehicle is not possible due to the physical design and shape of the new Kia logo.
+                  </div>
+               </div>
             </div>
             <div class="accordion_item">
-                <div class="accordion_question">
-                    Can I get my Kia Dealer to update the logo on my current Kia Vehicle?
-                </div>
-                <div class="accordion_answer_holder">
-                    <div class="accordion_answer">
-                        Changing your previous Kia badge on your current vehicle is not possible due to the physical design and shape of the new Kia logo.
-                    </div>
-                </div>
+               <div class="accordion_question">
+                  Why do some vehicles already have the Kia logo overseas?
+               </div>
+               <div class="accordion_answer_holder">
+                  <div class="accordion_answer">
+                     The new Kia logo application is different amongst global regions due to the production month of 2022 Model Year vehicles varying globally.
+                  </div>
+               </div>
             </div>
             <div class="accordion_item">
-                <div class="accordion_question">
-                    Why do some vehicles already have the Kia logo overseas?
-                </div>
-                <div class="accordion_answer_holder">
-                <div class="accordion_answer">
-                    The new Kia logo application is different amongst global regions due to the production month of 2022 Model Year vehicles varying globally.
-                </div>
-                </div>
+               <div class="accordion_question">
+                  What is the new Kia ethos?
+               </div>
+               <div class="accordion_answer_holder">
+                  <div class="accordion_answer">
+                     The new Kia brand ethos is ‘Movement that inspires'.
+                     We believe movement inspires ideas. That is why we create the space for inspiration with our bold new designs and original inventive products, 
+                     creating user ownership and experiences that are simple, intuitive and integrated.
+                  </div>
+               </div>
             </div>
-            <div class="accordion_item">
-                <div class="accordion_question">
-                    What is the new Kia ethos?
-                </div>
-                <div class="accordion_answer_holder">
-                <div class="accordion_answer">
-                    The new Kia brand ethos is ‘Movement that inspires'.
-                    We believe movement inspires ideas. That is why we create the space for inspiration with our bold new designs and original inventive products, 
-                    creating user ownership and experiences that are simple, intuitive and integrated.
-                </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="contacts">
-        <div class="contacts_container">
+            <div class="last_item_accordion"></div>
+         </div>
+      </section>
+      <section id="contacts" class="contacts">
+         <div class="contacts_container">
             <h2>Contact Us</h2>
             <p>If you have any questions, you can contact us</p>
             <div class="contact-box">
-                <div class="contact-left">
-                    <h3>Send your request</h3>
-                    <form>
-                        <div class="input-row">
-                            <div class="input-group">
-                                <label>Name</label>
-                                <input type="text" placeholder="John Amendo">
-                            </div>
-                            <div class="input-group">
-                                <label>Phone</label>
-                                <input type="text" placeholder="+998 27 2002 12 23">
-                            </div>
+               <div class="contact-left">
+                  <h3>Send your request</h3>
+                  <form>
+                     <div class="input-row">
+                        <div class="input-group">
+                           <label>Name</label>
+                           <input type="text" placeholder="John Amendo">
                         </div>
-                        <div class="input-row">
-                            <div class="input-group">
-                                <label>Email</label>
-                                <input type="email" placeholder="johnamendo@gmail.com">
-                            </div>
-                            <div class="input-group">
-                                <label>Subject</label>
-                                <input type="text" placeholder="Product Demo">
-                            </div>
+                        <div class="input-group">
+                           <label>Phone</label>
+                           <input type="text" placeholder="+998 27 2002 12 23">
                         </div>
-                        <label>Message</label>
-                        <textarea rows="5" placeholder="Your Message"></textarea>
-                        <button type="submit" class="submit">Send</button>
-                    </form>
-
-                </div>
-                <div class="contact-right">
-                    <h3>Reach Us</h3>
-                    <table>
-                        <tr>
-                            <td>Email</td>
-                            <td>contactus@example.com</td>
-                        </tr>
-                        <tr>
-                            <td>Phone</td>
-                            <td>+998(89) 951 45 87</td>
-                        </tr>
-                        <tr>
-                            <td>Adress</td>
-                            <td>White street, Tashkent, Uzbekistan</td>
-                        </tr>
-                    </table>
-                </div>
+                     </div>
+                     <div class="input-row">
+                        <div class="input-group">
+                           <label>Email</label>
+                           <input type="email" placeholder="example@gmail.com" id="email" onkeypress="validation()">
+                           <p id="email_text"></p>
+                        </div>
+                        <div class="input-group">
+                           <label>Subject</label>
+                           <input type="text" placeholder="Demo">
+                        </div>
+                     </div>
+                     <label>Message</label>
+                     <textarea rows="5" placeholder="Your Message"></textarea>
+                     <button type="submit" class="submit">Send</button>
+                  </form>
+               </div>
+               <div class="contact-right">
+                  <h3>Reach Us</h3>
+                  <table>
+                     <tr>
+                        <td>Email</td>
+                        <td><a href="mailto: contactus@example.com">contactus@example.com</a></td>
+                     </tr>
+                     <tr>
+                        <td>Phone</td>
+                        <td><a href="tel: +998(89) 951 45 87">+998(89) 951 45 87</a></td>
+                     </tr>
+                     <tr>
+                        <td>Adress</td>
+                        <td>White street, Tashkent, Uzbekistan</td>
+                     </tr>
+                  </table>
+               </div>
             </div>
-        </div>  
-    </section>
-    <script src="js/filter.js"></script>
-    <script src="js/accordion.js"></script>
-    <script src="js/hamburger.js"></script>
-    <script src="js/slider.js   "></script>
-</body>
+         </div>
+         <div class="purpose">
+            <div class="purpose_text">
+               This website was created to fulfill Web Technology module’s requirements and does not represent an actual company or service.
+            </div>
+         </div>
+      </section>
+      <script src="js/filter.js"></script>
+      <script src="js/accordion.js"></script>
+      <script src="js/hamburger.js"></script>
+      <script src="js/slider.js"></script>   
+      <script src="js/validation.js"></script>
+   </body>
 </html>

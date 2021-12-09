@@ -1,7 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0; 
-    text-decoration: none;
+    font-size: 10px;
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
@@ -15,6 +19,7 @@ body {
     height: 100vh;
     background: url('../img/intro-bg.jpg') center no-repeat;
     background-size: cover;
+    overflow-y: hidden;
 }
 
 li {
@@ -29,8 +34,8 @@ a {
     background-color: #fff;
     position: fixed;
     min-height: 70px;
-    display: flex;
-    justify-content: space-between;
+    display : flex;
+    justify-content: center;
     align-items: center;
     padding: 0 24px;
     margin-left: 400px;
@@ -53,7 +58,7 @@ a {
 
 .header_nav_link {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 600;
     margin-right: 20px;
     padding: 10px;
@@ -86,16 +91,6 @@ a {
       display: block;
     }
   
-    .hamburger.active .bar:nth-child(2) {
-      opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3){
-      transform: translateY(-8px) rotate(-45deg);
-    }
-  
     .navbar {
       position: fixed;
       left: -100%;
@@ -115,6 +110,10 @@ a {
     .navbar.active {
       left: 0;
     }
+
+    .header_nav {
+        background-color: transparent;
+    }
   }
 
 .header_logo > a > img {
@@ -123,49 +122,69 @@ a {
     height: 90px;
     margin: 0 50px;
 }
+
 .header_content {
     margin: 90px 55px;
 }
+
 .header_content > h1 {
     margin: 20px 0;
-    font-size: 40px;
+    font-size: 4rem;
 }
+
 .header_content > h3 {
-    font-size: 23px;
+    font-size: 2.3rem;
 }
+
+
 .vehicles {
-    overflow: hidden;
-    min-height: 100vh;
+    overflow: hidden; 
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 100px 0;
 }
+
 .vehicles_heading {
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: 600;
     margin-top: 50px;
     text-transform: uppercase;
 }
 
-@media screen and (max-width:768px){
-    .vehicles_photos{
-        display: none;
-    }
+.vehicles_heading p {
+    font-size: 2rem;
 }
+
 @media  (max-width:768px) {
     .vehicles_photos {
-        content: none;
+        width: auto;
+        height: auto;
+    }
+    .vehicles_photos img {
+        width: 75%;
+        height: 60%;
     }
     
 }
-.vehicle_selection > button {
+
+.vehicle_selection {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10px auto;
+    justify-content: center;
+}
+.vehicle_selection  div button {
     background-color: white;
     border: none;
     margin: 20px 20px;
-    font-size: 16px;
+    font-size: 1.6rem;
+    cursor: pointer;
     
 }
+
 .btn::after{
     content: "";
     display: block;
@@ -175,6 +194,7 @@ a {
     background: #333;
     transition: width 0.2s linear;
 }
+
 .btn:hover::after{
     width: 100%;
 }
@@ -188,6 +208,7 @@ a {
   .show {
     display: block;
   }
+
 
 
 
@@ -206,33 +227,42 @@ a {
     height: auto;
     background: url('../img/lease.jpg') center no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 .info_head {
     padding-top: 100px;
     padding-left: 50px;
-    font-size: 35px;
+}
+
+.info_head h2 {
+    font-size: 3.5rem;
 }
 
 .info_head > h2 {
     color: #fff;
 }
 
-.info_btn {
-    margin-top: 455px;
-    margin-left: 80px;
+.info_click {
+    width: 100%;
+    height: 100vh;
+    position: relative;
 }
 
-.info_btn > a {
+.info_btn {
     padding: 5px 10px;
-    height: 40px;
-    width: 130px;
+    height: auto;
+    max-width: 130px;
     text-decoration: none;
     color: white;   
     outline: 5px solid white;
-    background: rgb(146, 139, 139);
-    font-size: 40px;
+    background: #000;
+    font-size: 4rem;
     font-weight: 400;
+    position: absolute;
+    top: 80%;
+    left: 10%;
 }
 
 .about {
@@ -240,6 +270,7 @@ a {
     min-height: 100vh;
     height: auto;
 }
+
 
 .container {
     display: flex;
@@ -253,7 +284,7 @@ a {
     position: relative;
     width: 100%;
     max-width: 900px;
-    margin: 10px;
+    margin-top: 7%;
     background-color: white;
     overflow: hidden;
 }
@@ -268,7 +299,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
     font-weight: bold;   
     top: 0;
     left: 0;
@@ -280,6 +310,11 @@ a {
     padding: 40px;
 }
 
+.slider_texts p {
+    font-size: 3rem;
+    max-width: 550px;    
+}
+
 .slider_text.active {
     opacity: 1;
 }
@@ -287,6 +322,7 @@ a {
 .slider_text img {
   width: 100%;
 }
+
 
 .slider_btn {
     border-radius: 20px;
@@ -296,6 +332,8 @@ a {
     background-color: #333;
     opacity: .8;
     cursor: pointer;
+    padding: 35px;
+    margin: 0 40px;
 }
 
 #btn_back {
@@ -408,6 +446,7 @@ a {
 }
 
 .card h2 {
+    font-size: 2.5rem;
     color: #fff;
 }
 
@@ -415,38 +454,41 @@ a {
     color: #fff;
     margin: 10px;
     text-shadow: 0 0 15px #fff;
-    font-size: 8px;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 .faqs {
   background-color: #34495e;
   color: #fff;
   height: auto;
-  min-height: 100vh;
 }
+
 .faqs > h1 {
   text-align: center;
   padding: 20px;
-  font-size: 40px;
+  font-size: 4rem;
 }
 
 .accordion {
   width: 90%;
   max-width: 1000px;
-  margin: 2rem auto;
+  margin: auto;
 }
 
 
 .accordion_item {
+  text-decoration: none;
   background-color: #fff;
   color: #111;
   margin: 1rem 0;
-  border-radius: 0.5rem;
+  border-radius: 0.8rem;
+  border: 1px solid black;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
 }
+
 .accordion_question {
-  padding: 0.5rem 3rem 0.5rem 1rem;
+  font-size: 2rem;
+  padding: 13px 17px;
   min-height: 3.5rem;
   line-height: 1.25rem;
   font-weight: bold;
@@ -454,31 +496,45 @@ a {
   align-items: center;
   position: relative;
   cursor: pointer;
+  background-color: inherit;
+  border-radius: 0.8rem;
 }
+
+
 .accordion_question::after {
   content: "\002B";
   font-size: 2rem;
   position: absolute;
   right: 1rem;
 }
+
 .accordion_question.active::after {
   content: "\2212";
 }
+
 .accordion_answer_holder {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+
 .accordion_answer {
-  padding: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.6rem;  
+  padding: 2.4rem;
+  line-height: 2.4rem;
   border-top: 1px solid;
   border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
 }
 
+.last_item_accordion {
+    height: 10vh;
+    background-color: #34495e;
+}
+
+
 @media(max-width:767px) {
-  html {
-    font-size: 14px;
+  * {
+    font-size: 8px;
   }
 }
 
@@ -487,7 +543,7 @@ a {
     min-height: 100vh;
     height: auto;
     background-color: #4b4b4b;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .contacts_container {
@@ -496,13 +552,7 @@ a {
     padding: 50px 0;
 }
 
-.contacts_container h2 {
-    color: #fff;
-}
 
-.contacts_container p {
-    color: #fff;
-}
 
 .contact-box {
     background: #fff;
@@ -522,11 +572,15 @@ a {
 }
 
 .contacts_container > h2 {
+    color: #fff;
     margin-left: 18px;
+    font-size: 3rem;
 }
 
 .contacts_container > p {
+    color: #fff;
     margin: 20px;
+    font-size: 1.6rem;
 }
 
 .input-row {
@@ -540,6 +594,7 @@ a {
 }
 
 .input-group > input {
+    font-size: 1.5rem;
     width: 100%;
     border: none;
     border-bottom: 1px solid #ccc;
@@ -547,7 +602,9 @@ a {
     padding-bottom: 5px;
 }
 
+
 textarea {
+    font-size: 1.5rem;
     width: 100%;
     border: 1px solid #ccc;
     outline: none;
@@ -556,12 +613,14 @@ textarea {
 }
 
 label {
+    font-size: 1.6rem;
     margin-bottom: 6px;
     display: block;
     color: #1c00b5;
 }
 
 .submit {
+    font-size: 1.5rem;
     background-color: #1c00b5;
     width: 100px;
     border: none;
@@ -574,13 +633,15 @@ label {
 }
 
 .contact-left > h3 {
+    font-size: 2rem;
     color: #1c00b5;
-    font-size: 600;
+    font-weight: 600;
     margin-bottom: 30px;
 }
 
 .contact-right > h3 {
-    font-size: 600;
+    font-size: 2rem;
+    font-weight: 600;
     margin-bottom: 30px;
 }
 
@@ -589,7 +650,27 @@ tr td:first-child {
 
 }
 
+tr td a {
+    font-size: 1.6rem;
+}
+
 tr td {
+    font-size: 1.6rem;
     padding-top: 20px;
 }
 
+.purpose {
+    width: 100%;
+    height: 10vh;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.purpose_text {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
